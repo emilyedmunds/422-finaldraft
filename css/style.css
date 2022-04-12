@@ -52,12 +52,13 @@ a:link {
 }
 
 a:hover{
-	box-shadow: inset 100px 0 0 0 #00274C;
+	box-shadow: 12px 12px 2px 1px #00274C;
   	color: white;
 }
 
 a:visited{
 	color:#00274C;
+	font-weight: bold;
 }
 
 #main {
