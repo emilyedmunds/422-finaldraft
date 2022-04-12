@@ -355,6 +355,19 @@ justify-items: center;
 	.rotate{
 	  animation: none;
 	}
+
+	.flip-card:hover .flip-card-inner,  .flip-card-back,
+.flip-card:focus .flip-card-inner,
+.flip-card:focus-within .flip-card-inner,
+.flip-card:active .flip-card-inner,
+.flip-card-click:focus .flip-card-inner,
+.flip-card-click:active .flip-card-inner,
+.flip-card-click.flipped .flip-card-inner {
+  transform: rotateY(0deg);
+  transition: none;
+  border: none;
+}
+
   }
 
 
@@ -385,5 +398,84 @@ justify-items: center;
   margin-left: auto;
   margin-right: auto;
   width: 80%;
+  }
+
+  .flip-card {
+    margin: auto;
+    background-color: transparent;
+    width: 300px;
+    height: 200px;
+    margin-right: auto;
+    margin-left: auto;
+    
+    perspective: 1000px; 
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    /* text-align: center; */
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
+  .flip-card-front{
+
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+    margin-right: auto;
+    margin-left: auto;
+
+  }
+
+
+
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; 
+    backface-visibility: hidden;
+    color: #000;
+    font-size: 30px;
+  font-family: "Georgia", "Times New Roman";
+  margin-right: auto;
+    margin-left: auto;
+    
+  }
+
+
+
+  .flip-card:focus .flip-card-inner,
+  .flip-card:focus-within .flip-card-inner,
+  .flip-card:active .flip-card-inner,
+  .flip-card-click:focus .flip-card-inner,
+  .flip-card-click:active .flip-card-inner,
+  .flip-card-click.flipped .flip-card-inner {
+    transform: rotateY(180deg);
+    
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .flip-card-back {
+  
+	margin:auto;
+	 transform: rotateY(180deg);
+   }
+
+   .flip-card {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
   }
 
