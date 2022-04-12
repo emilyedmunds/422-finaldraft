@@ -503,7 +503,14 @@ input[type=checkbox] + label {
 } 
 
 input[type=checkbox]:checked + label {
-  color: #f00;
+  color: #00274C;
   font-style: normal;
 }
+
+#compsci, #SI, #design, #other{
+	display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  }
 
