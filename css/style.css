@@ -390,7 +390,7 @@ justify-items: center;
     line-height: 1.5;
 }
 
-/* ///// inputs /////*/
+/* ///// inputs /////
 
 input:focus ~ label, textarea:focus ~ label, input:valid ~ label, textarea:valid ~ label {
     font-size: 0.75em;
@@ -491,9 +491,9 @@ textarea {
 	.btn-large {
 		width: 100%;
 	}
-}
+} */
 
-.contact {
+/* .contact {
 	color: white;
 }
 
@@ -505,7 +505,7 @@ input[type=checkbox] + label {
 input[type=checkbox]:checked + label {
   color: #00274C;
   font-style: normal;
-}
+} */
 
 #compsci, #SI, #design, #other{
 	display: block;
