@@ -304,12 +304,18 @@ justify-items: center;
 		margin-bottom: 15px;
 	  }
 
-	nav{
+	/* nav{
 		display: flex;
 		padding: 25px 0; 
 		text-align: left;
 		justify-content: flex-end;
 		flex-wrap: wrap;
+	  } */
+
+	  nav li{
+		display:inline;
+		padding-right:60px;
+	  
 	  }
 
 	  #compsci, #SI, #design, #other{
