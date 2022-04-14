@@ -323,6 +323,14 @@ justify-items: center;
 /* media query laptop */
 @media screen and (min-width: 1024px){
 
+	img.paralax {
+        width: 25%;
+    }
+
+    img#paralax {
+        width: 25%;
+    }
+
 	.skip-to-main {
         display: inline-block;
     }
@@ -511,4 +519,8 @@ justify-items: center;
 	background-position: 50% 10%;
 	background-repeat: no-repeat;
 	background-size: 50%;
+}
+
+img.paralax {
+    width: 60%;
 }
