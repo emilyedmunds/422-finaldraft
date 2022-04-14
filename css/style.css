@@ -112,11 +112,24 @@ h2{
 	color:blue;
   }
 
-  nav li{
+  /* nav li{
 	display:grid;
 	grid-template-columns: auto;
 	padding-right:20px;
   
+  } */
+
+  nav{
+    display: flex;
+    flex-direction: column;
+    padding: 25px 0; 
+    align-items: center;
+    flex-wrap: wrap;
+	}
+
+	.naviitem{
+		display: flex;
+		font-size: 15px;
   }
 
   .fa-solid, .fas {
@@ -352,11 +365,16 @@ justify-items: center;
 	  margin-bottom: 15px;
 	}
   
-	nav li{
+	/* nav li{
 		display:grid;
 	grid-template-columns: auto auto auto auto;
 	padding-right:20px;
-	}
+	} */
+	nav li{
+		display:inline;
+		padding-right:60px;
+	  
+	  }
   }
 
 .rotate {
