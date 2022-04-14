@@ -109,7 +109,7 @@ h2{
 } */
 
   .skip-to-main a:visited{
-	color:white;
+	color:blue;
   }
 
   nav li{
@@ -273,6 +273,11 @@ justify-items: center;
   /* media query for tablet */
   @media screen and (min-width: 760px){
 
+	.skip-to-main:focus {
+        left: 0px;
+        top: 20px;
+    }
+
 	.logos{
 		display: grid;
 		grid-template-columns: auto auto auto;
@@ -317,6 +322,15 @@ justify-items: center;
 
 /* media query laptop */
 @media screen and (min-width: 1024px){
+
+	.skip-to-main {
+        display: inline-block;
+    }
+
+    .skip-to-main:visited {
+        color: blue;
+    }
+
 	.gallery{
 	  display: grid;
 	  grid-template-columns: auto auto auto auto;
@@ -353,6 +367,12 @@ justify-items: center;
 }
 
 @media (prefers-reduced-motion:reduce){
+
+	.skip-to-main {
+        -webkit-transition: initial;
+        transition: initial;
+    }
+
 	.rotate{
 	  animation: none;
 	}
