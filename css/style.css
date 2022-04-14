@@ -353,9 +353,11 @@ justify-items: center;
 	}
   
 	nav li{
-	  display:inline;
-	  padding-right:60px;
-	
+		display: flex;
+		padding: 25px 0;
+		text-align: left;
+		justify-content: flex-end;
+		flex-wrap: wrap;
 	}
   }
 
