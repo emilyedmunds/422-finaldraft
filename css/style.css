@@ -368,6 +368,10 @@ justify-items: center;
 
 @media (prefers-reduced-motion:reduce){
 
+	div.parallax {
+        background-attachment: inherit;
+    }
+
 	.skip-to-main {
         -webkit-transition: initial;
         transition: initial;
@@ -500,3 +504,11 @@ justify-items: center;
 	justify-content: center;
   }
 
+  .parallax {
+	background-image: url("../images/umsi_building.jpeg");
+	height: 100%;
+	background-attachment: fixed;
+	background-position: 50% 10%;
+	background-repeat: no-repeat;
+	background-size: 50%;
+}
