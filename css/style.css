@@ -352,7 +352,8 @@ justify-items: center;
 	}
   
 	nav li{
-	  display:inline;
+	  display:grid;
+	  grid-template-columns: auto;
 	  padding-right:60px;
 	
 	}
