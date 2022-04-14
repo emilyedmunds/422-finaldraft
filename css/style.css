@@ -524,3 +524,7 @@ justify-items: center;
 img.paralax {
     width: 60%;
 }
+
+.big_image {
+	visibility: hidden;
+}
